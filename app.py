@@ -10,6 +10,9 @@ import streamlit.components.v1 as components
 import os
 import tempfile
 import uuid 
+import locale
+locale.setlocale(locale.LC_ALL, '')
+
 
 
 
