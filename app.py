@@ -10,10 +10,7 @@ import streamlit.components.v1 as components
 import os
 import tempfile
 import uuid 
-import locale
-locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
-import sys
-sys.stdout.reconfigure(encoding='utf-8')
+
 
 
 
