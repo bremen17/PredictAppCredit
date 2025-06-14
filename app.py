@@ -4,12 +4,12 @@ import joblib
 import pandas as pd
 import numpy as np
 import plotly.express as px 
-import shap # Import SHAP
-import matplotlib.pyplot as plt # Import for SHAP plots
+import shap 
+import matplotlib.pyplot as plt 
 import streamlit.components.v1 as components 
 import os
 import tempfile
-import uuid # Pour générer des noms de fichiers uniques
+import uuid 
 import locale
 locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 import sys
@@ -162,7 +162,7 @@ def explain_prediction(input_df):
 
 # --- Interface Streamlit --- 
 
-st.title("Application de Prédiction et d\"Explication de Défaut de Paiement")
+st.title("Application de Prédiction et d\'Explication de Défaut de Paiement")
 st.write("Utilisez les options dans la barre latérale pour entrer les informations d\"un client et obtenir une prédiction de défaut de paiement, ainsi qu\"une explication de cette prédiction.")
 
 st.sidebar.header("Informations sur le client")
@@ -299,6 +299,6 @@ st.sidebar.markdown("--- ")
 st.sidebar.header("À Propos")
 st.sidebar.info(
     "Application de démonstration pour la prédiction de défaut de paiement. "
-    "Développée avec Streamlit, Scikit-learn, Imbalanced-learn et SHAP. "
+    "Développée avec Streamlit, Scikit-learn. "
     "Basée sur le dataset UCI Credit Card Default."
 )
